@@ -1,0 +1,9 @@
+.breadcrumbs {
+    padding: 16px;
+    background-color: transparent;
+    color: #50535a;
+    text-align: left;
+    @media (max-width: 768px) {
+        display: none;
+    }
+}

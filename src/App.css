@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: 'Telefonica-Regular'; /* Nombre de la fuente personalizada */
+  src: url('/public/assets/fonts/Telefonica-Regular.ttf') format('woff'); /* Ruta al archivo de fuente */
+  font-weight: normal;
+  font-style: normal;
+}

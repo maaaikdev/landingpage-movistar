@@ -1,0 +1,350 @@
+.card {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.10);
+    -moz-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.10);
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.10);
+    border-radius: 6px;
+    padding: 24px;
+    position: relative;
+    @media (max-width: 768px) {
+        padding: 24px 16px;
+        margin-bottom: 24px;
+    }
+    .top-ranking {
+        background-color: #a13ea1;
+        padding: 3px 16px 5px;
+        color: #fff;
+        font-family: 'Telefonica-Bold';
+        font-size: 11px;
+        border-radius: 22px;
+        position: absolute;
+        top: 0;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        right: 50%;
+        width: 60%;
+        @media (max-width: 768px) {
+            width: 100%;
+            border-radius: 12px 12px 0 0;
+}
+        &.hidden {
+            display: none;
+        }
+    }
+    h4 {
+        font-size: 18px;
+        line-height: 1.2;
+        color: #0b2739;
+        text-align: center;
+        margin: 0 auto;
+        @media (max-width: 768px) {
+            font-size: 24px;
+        }
+    }
+    h5 {
+        font-size: 12px;
+        line-height: 1.2;
+        color: #86888c;
+        text-align: center;
+        margin: 4px auto 0;
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
+    }
+    .price-table {
+        display: flex;
+        flex-direction: column;
+        margin: 16px auto;
+        @media (max-width: 768px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .left{
+            @media (max-width: 768px) {
+                border-right: 1px solid #d3d4d3;
+            }
+            h2 {
+                font-size: 37px;
+                line-height: 1.2;
+                color: #019df4;
+                text-align: center;
+                margin-bottom: 4px;
+                margin: 8px auto 0;
+                @media (max-width: 768px) {
+                    font-size: 32px;
+                    margin: 0 auto 0;
+                }
+            }
+            p {
+                &.speed {
+                    font-size: 12px;
+                    line-height: 1.2;
+                    color: #0b2739;
+                    text-align: center;
+                    margin: 4px auto 8px;
+                }
+            }
+        }
+        .right{
+            .price {
+                font-size: 20px;        
+                font-family: 'Telefonica-Regular';
+                line-height: 1.2;
+                color: #0b2739;
+                text-align: center;
+                margin: 8px auto 0;
+                @media (max-width: 768px) {
+                    margin: 0 auto 0;
+                }
+                span {
+                    &.big-price{
+                        font-family: 'Telefonica-Bold';
+                        font-size: 32px;
+                    }
+                    &.small-price{
+                        font-family: 'Telefonica-Bold';
+                        font-size: 12px;
+                    }
+                }
+            }
+            p {
+                &.speed {
+                    font-size: 12px;
+                    line-height: 1.2;
+                    color: #0b2739;
+                    text-align: center;
+                    margin: 4px auto 8px;
+                }
+            }
+        }
+    }
+    p {        
+        &.install {
+            font-size: 13px;
+            color: #019df4;
+            margin: 16px auto 4px;
+            @media (max-width: 768px) {
+                font-size: 14px;
+            }
+        }
+        &.prev {
+            font-size: 12px;
+            color: #0b2739;
+            margin: 0 auto;
+            @media (max-width: 768px) {
+                font-size: 13px;
+            }
+        }
+    }
+    .btn-main{
+        width: 100%;
+        font-size: 16px;
+        font-family: 'Telefonica-Bold';
+        padding: 12px 10px;
+        display: block;
+        background-color: #019df4;
+        color: #fff;
+        border-radius: 50px;
+        border: 0;
+        margin: 16px auto;
+        cursor: pointer;
+        @media (max-width: 768px) {
+            margin: 16px auto 8px;
+        }
+    }
+    .btn-second{
+        width: 100%;
+        font-size: 16px;
+        font-family: 'Telefonica-Bold';
+        padding: 12px 10px;
+        display: block;
+        background-color: #fff;
+        color: #019df4;
+        border-radius: 50px;
+        border: 1px solid #019df4;
+        margin: 16px auto;
+        cursor: pointer;
+        @media (max-width: 768px) {
+            margin: 8px auto;
+        }
+    }
+    .link-drop {
+        display: none;
+        @media (max-width: 768px) {
+            display: flex;
+            font-size: 16px;
+            color: #019df4;
+            text-decoration: underline;
+            width: 100%;
+            margin: 16px auto 8px;
+            align-items: center;
+            justify-content: center;
+        }
+        .normal{
+            @media (max-width: 768px) {
+                width: 18px;
+                margin-left: 10px;
+            }
+        }
+        .rotate{
+            @media (max-width: 768px) {
+                width: 18px;
+                margin-left: 10px;
+                transform: rotate(180deg);
+            }
+        }
+    }
+    .divDrop {
+        @media (max-width: 768px) {
+            padding: 16px 0 0;
+        }
+        .apps{
+            display: flex;
+            justify-content: space-between;
+            margin: 8px;
+            @media (max-width: 768px) {
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                margin: 16px auto;
+            }
+            img {
+                @media (max-width: 768px) {
+                    width: 24px;
+                    margin: 0 auto;
+                }
+            }
+        }
+        .bono{
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 8px;
+            padding: 8px;
+            margin: 16px auto;
+            @media (max-width: 768px) {
+                flex-direction: row;
+            }
+            &.hidden {
+                display: none;
+            }
+            h4{
+                color: #0b2739;
+                font-size: 14px;
+                line-height: 20px;
+                font-family: 'Telefonica-Bold';
+            }
+            p{
+                color: #019df4;
+                font-size: 12px;
+                font-family: 'Telefonica-Bold';
+                margin: 4px auto;
+                span {
+                    color: #0b2739;
+                }
+            }
+        }
+        .promo-1{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            background-color: #f4f4f4;
+            padding: 12px 0;
+            margin: 16px auto;
+            border-radius: 8px;
+            .promo-left{
+                display: flex;
+                flex-direction: column;
+                border-right: 1px solid #0b2739;
+                padding: 0 8px;
+                .bullet {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    img {
+                        width: 16px;
+                        height: 16px;
+                        margin-right: 4px;
+                    }
+                    p{
+                        color: #0b2739;
+                        font-size: 20px;
+                        font-family: 'Telefonica-Light'; 
+                        margin: 0 auto;
+                    }
+                }
+                p{
+                    color: #0b2739;
+                    margin: 0 auto;
+                    font-size: 9px;
+                }
+            }
+            .promo-right {
+                padding: 0 8px;
+                h6 {
+                    color: #0b2739;
+                    margin: 0 auto;
+                    font-size: 13px;
+                    span {
+                        font-family: 'Telefonica-Bold';
+                    }
+                }
+                p{
+                    color: #0b2739;
+                    margin: 6px auto 0;
+                    font-size: 11px;
+                }
+            }
+        }
+        .promo-2{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            background-color: #f4f4f4;
+            padding: 12px 0;
+            margin: 16px auto;
+            border-radius: 8px;
+            .promo-left{
+                display: flex;
+                flex-direction: column;
+                padding: 0 8px;
+                img {
+                    width: 50px;
+                    margin: 0 auto;
+                }
+            }
+            .promo-right {
+                padding: 0 8px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                h6 {
+                    color: #0b2739;
+                    margin: 0 auto;
+                    font-size: 13px;
+                    font-family: 'Telefonica-Bold';
+                }
+                p{
+                    color: #0b2739;
+                    margin: 2px auto 0;
+                    font-size: 11px;
+                }
+            }
+        }
+        .description{
+            display: flex;
+            align-items: flex-start;
+            margin-top: 24px;
+            img {
+                width: 16px;
+                margin-right: 8px;
+            }
+            p{
+                font-size: 12px;
+                line-height: 18px;
+                color: #313235;
+                margin: 0;
+                text-align: left;
+            }
+        }
+    }    
+}
