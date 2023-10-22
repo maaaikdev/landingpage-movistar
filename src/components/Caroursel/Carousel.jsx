@@ -81,7 +81,7 @@ const Carousel = () => {
         		<h3> 6 tips para optimizar la conexión de tu fibra óptica </h3>
         		<Slider {...settings}>
 					{info.map((item, index) => (
-						<div className='content-box '>
+						<div className='content-box' key={index}>
 							<img src={item.img} alt={item.tip} />
 							<h4>{item.tip}</h4>
 							<p>{item.description}</p>

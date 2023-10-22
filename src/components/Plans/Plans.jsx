@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Plans.scss'
 import PlanCards from '../PlansCards/PlansCards';
 import plansData from '../../data/plans.json'
+import Tabs from '../Tabs/Tabs';
 
 const Plans = () => {
     const [data, setData] = useState(null);
@@ -25,11 +26,10 @@ const Plans = () => {
 
   return (
 	<>
+		<Tabs />
 		<div className='content-plans'>
-			{/* {data ? <PlanCards plan={data} /> : (
-				<p>Cargando JSON...</p>
-			)} */}
-				{data && data.map((item, index) => (
+			
+			{data && data.map((item, index) => (
 				<PlanCards key={index} plan={item} /> 
 			))}
 		</div>
