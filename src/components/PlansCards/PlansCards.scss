@@ -7,7 +7,7 @@
     padding: 24px;
     position: relative;
     @media (max-width: 768px) {
-        padding: 24px 16px;
+        padding: 24px 0;
         margin-bottom: 24px;
     }
     .top-ranking {
@@ -55,6 +55,7 @@
         display: flex;
         flex-direction: column;
         margin: 16px auto;
+        align-items: center;
         @media (max-width: 768px) {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -62,6 +63,7 @@
         .left{
             @media (max-width: 768px) {
                 border-right: 1px solid #d3d4d3;
+                padding: 6px;
             }
             h2 {
                 font-size: 37px;
@@ -71,8 +73,8 @@
                 margin-bottom: 4px;
                 margin: 8px auto 0;
                 @media (max-width: 768px) {
-                    font-size: 32px;
                     margin: 0 auto 0;
+                    font-size: 32px;
                 }
             }
             p {
@@ -86,6 +88,9 @@
             }
         }
         .right{
+            @media (max-width: 768px) {
+                padding: 6px;
+            }
             .price {
                 font-size: 20px;        
                 font-family: 'Telefonica-Regular';
@@ -136,38 +141,44 @@
             }
         }
     }
-    .btn-main{
-        width: 100%;
-        font-size: 16px;
-        font-family: 'Telefonica-Bold';
-        padding: 12px 10px;
-        display: block;
-        background-color: #019df4;
-        color: #fff;
-        border-radius: 50px;
-        border: 0;
-        margin: 16px auto;
-        cursor: pointer;
+    .btn-main-content {
         @media (max-width: 768px) {
-            margin: 16px auto 8px;
+            padding: 0 16px;
+        }
+        .btn-main{
+            width: 100%;
+            font-size: 16px;
+            font-family: 'Telefonica-Bold';
+            padding: 12px 10px;
+            display: block;
+            background-color: #019df4;
+            color: #fff;
+            border-radius: 50px;
+            border: 0;
+            margin: 16px auto;
+            cursor: pointer;
+            @media (max-width: 768px) {
+                margin: 16px auto 8px;
+            }
+        }
+        .btn-second{
+            width: 100%;
+            font-size: 16px;
+            font-family: 'Telefonica-Bold';
+            padding: 12px 10px;
+            display: block;
+            background-color: #fff;
+            color: #019df4;
+            border-radius: 50px;
+            border: 1px solid #019df4;
+            margin: 16px auto;
+            cursor: pointer;
+            @media (max-width: 768px) {
+                margin: 8px auto;
+            }
         }
     }
-    .btn-second{
-        width: 100%;
-        font-size: 16px;
-        font-family: 'Telefonica-Bold';
-        padding: 12px 10px;
-        display: block;
-        background-color: #fff;
-        color: #019df4;
-        border-radius: 50px;
-        border: 1px solid #019df4;
-        margin: 16px auto;
-        cursor: pointer;
-        @media (max-width: 768px) {
-            margin: 8px auto;
-        }
-    }
+
     .link-drop {
         display: none;
         @media (max-width: 768px) {
@@ -196,7 +207,7 @@
     }
     .divDrop {
         @media (max-width: 768px) {
-            padding: 16px 0 0;
+            padding: 16px 24px 0;
         }
         .apps{
             display: flex;
@@ -260,6 +271,7 @@
                     display: flex;
                     flex-direction: row;
                     align-items: center;
+                    justify-content: center;
                     img {
                         width: 16px;
                         height: 16px;
@@ -267,9 +279,9 @@
                     }
                     p{
                         color: #0b2739;
-                        font-size: 20px;
+                        font-size: 18px;
                         font-family: 'Telefonica-Light'; 
-                        margin: 0 auto;
+                        margin: 0;
                     }
                 }
                 p{

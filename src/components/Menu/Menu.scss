@@ -1,84 +1,195 @@
 
-.black-nav {
-	background-color: #0b2739;
-	padding: 8px;
-	color: #fff;
-	@media (max-width: 768px) {
-        display: none;
-    }
-}
 
-.menu {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 10px;
-	background-color: #fff;
-	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
+//    padding: 16px 10%;
 
-.menu-items {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	display: flex;
+nav {	
+	.black-nav {
+		background-color: #0b2739;
+		color: #fff;
+		padding: 8px 10%;
+		@media (max-width: 768px) {
+			display: none;
+		}
+		@media (min-width: 1700px) {
+			padding: 8px 20%;
+		}
+		ul{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			li {
+				padding: 0 8px;
+				display: flex;
+				flex-direction: row;
+				align-items: center;				
+				color: #d3d4d3;
+				font-size: 14px;				
+				&:last-child{
+					margin-left: auto;
+					color: #fff;
+					font-family: 'Telefonica-Bold';
+				}
+			}
+		}
 	}
-
-.menu-items li {
-	padding: 10px;
-	color: #50535a;
-}
-
-.menu-toggle {
-  	display: none;
+	.menu {
+		display: flex;
+		align-items: center;
+		background-color: #fff;
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+		padding: 16px 10%;
+		@media (min-width: 1700px) {
+			padding: 16px 20%;
+		}
+		.logo-movistar {
+			.logo {
+				margin: 0 16px 0 0;
+				width: 32px;
+			}
+		}		
+		.menu-items {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			.item {
+				padding: 8px;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				color: #313235;
+				font-size: 14px;
+				img {
+					width: 14px;
+					margin-left: 6px;
+				}
+			}
+			.item-offer{
+				padding: 8px;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				color: #a13ea1;
+				font-size: 14px;
+				font-family: 'Telefonica-Bold';
+				img {
+					width: 18px;
+					margin-right: 4px;
+				}
+			}			
+		}
+		.btn-second{
+			font-size: 16px;
+			font-family: 'Telefonica-Bold';
+			padding: 8px 24px;
+			display: block;
+			background-color: #fff;
+			color: #019df4;
+			border-radius: 50px;
+			border: 1px solid #019df4;
+			cursor: pointer;
+			margin-left: auto;
+			@media (max-width: 768px) {
+				margin: 8px auto;
+			}
+		}
+		.menu-icons {
+			display: flex;
+			flex-direction: row;
+			grid-gap: 8px;
+			margin-left: 24px ;
+			.btn-icon{
+				border: 0;
+				background-color: transparent;
+				img {
+	
+				}
+			}
+		}		
+		.menu-toggle {
+			display: none;
+		}
+	}
 }
 
 @media (max-width: 768px) {
-	.menu-toggle {
-		display: block;
-		background: none;
-		border: none;
-		font-size: 24px;
-		cursor: pointer;
-	}
-	.menu-toggle.open {
-		transform: rotate(90deg);
-	}
-
-	.responsive-menu {
-		flex-direction: column; 
-	}
-
-	.menu-items.open {
-		list-style: none;
-		padding: 0;
-		margin: 0;
-		display: flex;
-		flex-direction: column;
-		background-color: #333;
-		border: 1px solid #444;
-		border-radius: 4px;
-		opacity: 0;
-		visibility: hidden;
-		transition: all 0.3s ease;
-	}
-
-	.menu-items {
-		opacity: 0;
-	}
-
-	.menu-items.open li {
-		padding: 10px;
-		color: #fff;
-	}
-
-	.menu-items.open {
-		opacity: 1;
-		visibility: visible;
-	}
-
-	.menu-items.open {
-		transform: translateY(0);
-	}
-
+	nav {
+		.menu {
+			padding: 0;
+			align-items: initial;
+			&.responsive-menu {
+				flex-direction: column;		
+			}
+			
+			.logo-movistar {		
+				text-align: left;
+				align-items: center;
+    			display: flex;
+				padding: 12px 16px;
+				&.shadow {
+					box-shadow: 0 0 6px rgba(0,0,0,.25);
+				}
+			}
+			.menu-items{
+				display: none;
+				&.open {
+					display: block;
+					visibility: visible;
+					transform: translateY(0);
+					list-style: none;
+					padding: 0;
+					margin: 0;
+					display: flex;
+					flex-direction: column;
+					border-radius: 4px;
+					transition: all 0.3s ease;
+					padding: 0 16px;
+					.item {
+						padding: 16px;
+						color: #313235;
+						border-bottom: 1px solid #d3d4d3;
+						img{
+							margin-left: auto;
+						}						
+					}
+					.item-offer{
+						padding: 16px;
+					}
+				}
+			}
+			.btn-second{
+				display: none;
+			}
+			.menu-icons {
+				margin: 0 16px 0 auto;
+				&.hidden {
+					display: none;
+				}
+				.btn-icon{				
+					&.hidden {
+						display: none;
+					}
+				}
+			}	
+			.menu-toggle {
+				display: block;
+				background: none;
+				border: none;
+				font-size: 24px;
+				cursor: pointer;
+				padding: 12px 20px 12px 0px;				
+				&.open {
+					transform: rotate(90deg);					
+				}
+				&.reposition {
+					position: absolute;
+    				right: 0;
+				}
+				img {
+					width: 24px;
+				}
+			}
+		}
+	}	
 }

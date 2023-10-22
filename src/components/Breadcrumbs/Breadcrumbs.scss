@@ -1,9 +1,38 @@
 .breadcrumbs {
     padding: 16px;
-    background-color: transparent;
+    background: transparent;
     color: #50535a;
     text-align: left;
+    padding: 8px 10%;
     @media (max-width: 768px) {
         display: none;
+    }
+    @media (min-width: 1700px) {
+        padding: 16px 20%;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        li {
+            padding: 8px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            color: #313235;
+            font-size: 14px;
+            img {
+                width: 14px;
+                margin-left: 6px;
+                transform: rotate(270deg);                
+            }
+            &:last-child {
+                color: #86888c;
+                img {
+                    display: none;
+                }
+            }
+        }
     }
 }

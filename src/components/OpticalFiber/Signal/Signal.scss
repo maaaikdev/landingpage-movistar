@@ -1,0 +1,200 @@
+.signal {
+    background: #f6f6f6;;
+    padding: 40px 10%;
+    @media (max-width: 768px) {
+        padding: 24px;
+    }
+    @media (min-width: 1700px) {
+        padding: 40px 20%;
+    }
+    .content-signal{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr );
+        grid-gap: 70px;
+        align-items: center;
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            grid-gap: 0;
+        }        
+        .right{
+            width: 100%;
+            img {
+                width: 100%;
+                border-radius: 12px;
+            }
+            @media (max-width: 768px) {
+            }
+        }
+        .left{
+            text-align: left;
+            h3 {
+                font-size: 32px;
+                line-height: 40px;
+                color: #0b2739;
+                font-family: 'Telefonica-Light';
+                @media (max-width: 768px) {
+                    font-size: 28px;
+                    line-height: 36px;
+                    margin-bottom: 0;
+                }
+            }
+            p{
+                font-size: 18px;
+                line-height: 24px;
+                color: #0b2739;
+                font-family: 'Telefonica-Light'; 
+                @media (max-width: 768px) {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    .benefits{
+        background-color: #fff;
+        -webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.10);
+        -moz-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.10);
+        box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.10);
+        border-radius: 8px;
+        padding: 24px;
+        margin: 32px auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr );
+        grid-gap: 24px;
+        @media (max-width: 768px) {
+            grid-gap: 16px;
+            grid-template-columns: 47% 47%;
+        }       
+        .box-info{
+            display: flex;
+            flex-direction: column;
+            grid-gap: 24px;
+            text-align: center;
+            img{
+                height: 42px;
+                margin: 0 auto;
+                @media (max-width: 768px) {
+                    height: 36px;
+                } 
+            }
+            p{
+                font-size: 16px;
+                line-height: 24px;
+                color: #50535a;
+                margin: 0;
+                @media (max-width: 768px) {
+                    font-size: 12px;
+                    line-height: 18px;
+                }   
+            }
+        }
+    }
+    .app-movistar{
+        background-color: #fff;
+        -webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.10);
+        -moz-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.10);
+        box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.10);
+        border-radius: 8px;
+        padding: 0 42px;
+        display: grid;
+        grid-template-columns: 18% 43% 26%;
+        grid-gap: 24px;
+        margin: 72px auto 24px;
+        align-items: center;
+        position: relative;
+        @media (max-width: 768px) {
+            grid-gap: 0;
+            grid-template-columns: inherit;
+            padding: 16px;
+            margin: 32px auto 24px;
+        }
+        img{
+            width: 98%;
+            // @media (min-width: 1700px) {
+            //     width: 80%;
+            // }
+            &.happy-man{
+                position: absolute;
+                width: 32%;
+                bottom: 0;
+                right: 24px;
+                @media (max-width: 768px) {
+                    display: none;
+                }
+                // @media (min-width: 1700px) {
+                //     width: 26%;
+                //     right: 50px;
+                // }
+            }
+            &.qr {
+                @media (max-width: 768px) {
+                    display: none;
+                }
+            }
+        }
+        .get-app {
+            display: grid;
+            grid-template-columns: 10% 90%;
+            grid-gap: 12px;
+            padding: 24px;
+            @media (max-width: 768px) {
+                padding: 0;
+                grid-template-columns: 18% 76%;
+            }
+            .left{
+                img{
+                    display: block;
+                    width: 40px;
+                    margin-top: 6px;
+                }
+            }
+            .right{
+                text-align: left;
+                h3{
+                    font-size: 28px;
+                    line-height: 34px;
+                    color: #50535a;
+                    margin: 0;
+                    font-family: 'Telefonica-Light';
+                    @media (max-width: 768px) {
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+                    span {
+                        font-family: 'Telefonica-Regular';
+                    }
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #50535a;
+                    margin: 0;
+                    @media (max-width: 768px) {
+                        font-size: 12px;
+                        line-height: 18px;
+                    }
+                }
+                .stores{
+                    display: flex;
+                    grid-gap: 16px;
+                    align-items: center;
+                    margin: 16px auto 0;
+                    @media (max-width: 768px) {
+                        width: 100%;
+                        margin: 24px auto;
+                        grid-gap: 8px;
+                        margin: 16px auto 8px
+                    }
+                    img {
+                        height: 46px;
+                        width: inherit;
+                        @media (max-width: 768px) {
+                            height: 34px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

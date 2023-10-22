@@ -1,0 +1,126 @@
+.footer {
+    background: #0b2739;
+    padding: 32px 14%;
+    text-align: left;
+    @media (max-width: 768px) {
+        padding: 24px 0;
+    }
+    @media (min-width: 1700px) {
+        padding: 40px 24%;
+    }
+    .logo-telefonica {
+        margin-bottom: 24px;
+        text-align: left;
+        @media (max-width: 768px) {
+            padding: 0 24px;            
+        }
+    }
+    .content-footer {
+        border-top: 1px solid #d3d4d3;
+        border-bottom: 1px solid #d3d4d3;
+        padding: 24px 0;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 10px;
+        @media (max-width: 768px) {
+            display: none;
+        }
+        .column{
+            h4 {
+                color: #fff;
+                font-size: 14px;
+                font-family: 'Telefonica-Bold';
+            }
+            ul{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                li {				
+                    color: #d3d4d3;
+                    font-size: 14px;
+                    padding: 4px 0;
+                }
+            }
+        }                
+    }
+    .content-footer-responsive{
+        border-top: 1px solid #d3d4d3;
+        .collapse-container {
+            button {
+                padding: 40px 16px;
+                background-color: transparent;
+                border: 0;
+                width: 100%;
+                font-size: 18px;
+                line-height: 24px;
+                color: #fff;
+                text-align: left;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                cursor: pointer;
+                font-family: 'Telefonica-Bold';
+                @media (max-width: 768px) {
+                    font-size: 16px;
+                    padding: 16px 24px;
+                }
+                .normal{
+                    width: 20px;
+                    margin-left: auto;
+                }
+                .rotate{
+                    width: 20px;
+                    margin-left: auto;
+                    transform: rotate(180deg);
+                }
+            }
+            .collapsed-content {
+                padding: 8px 24px 16px;
+                ul{
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    li {				
+                        color: #d3d4d3;
+                        font-size: 14px;
+                        padding: 8px 0;
+                    }
+                }
+            }
+        } 
+    }
+    .footer-bottom{
+        padding: 8px 0; 
+        @media (max-width: 768px) {
+            border-top: 1px solid #d3d4d3; 
+        }          
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            @media (max-width: 768px) {
+                flex-direction: column;
+                align-items: initial;
+            }
+            li {				
+                color: #d3d4d3;
+                font-size: 12px;
+                padding: 0px 10px;
+                @media (max-width: 768px) {
+                    padding: 4px 24px;
+                }
+                &.cp {
+                    margin-right: auto;
+                }
+                &.other-btn{                    
+                    border-right: 1px solid #d3d4d3;
+                    &:last-child{
+                        border-right: none;
+                    }
+                }
+            }
+        }
+    }    
+}

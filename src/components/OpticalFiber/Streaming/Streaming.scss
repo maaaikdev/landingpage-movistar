@@ -1,0 +1,87 @@
+.streaming {
+    background: #fff;
+    padding: 40px 10%;
+    @media (max-width: 768px) {
+        padding: 24px;
+    }
+    @media (min-width: 1700px) {
+        padding: 40px 20%;
+    }
+    .content-streaming{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr );
+        grid-gap: 70px;
+        align-items: center;
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            grid-gap: 0;
+        }        
+        .left{
+            width: 100%;
+            img {
+                width: 100%;
+                border-radius: 12px;
+            }
+            @media (max-width: 768px) {
+            }
+        }
+        .right{
+            text-align: left;
+            h3 {
+                font-size: 32px;
+                line-height: 40px;
+                color: #0b2739;
+                font-family: 'Telefonica-Light';
+                @media (max-width: 768px) {
+                    font-size: 28px;
+                    line-height: 36px;
+                    margin-bottom: 0;
+                }
+            }
+            p{
+                font-size: 18px;
+                line-height: 24px;
+                color: #0b2739;
+                font-family: 'Telefonica-Light'; 
+                @media (max-width: 768px) {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+            .link-plan {
+                display: flex;
+                font-size: 14px;
+                color: #019df4;
+                text-decoration: underline;
+                width: 100%;
+                margin: 16px auto 8px;
+                align-items: center;
+                .arrow{
+                    width: 18px;
+                    margin-left: 10px;
+                    transform: rotate(270deg);
+                    @media (max-width: 768px) {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .platforms {
+        width: 44%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 24px;
+        align-items: center;
+        margin: 32px auto;
+        @media (max-width: 768px) {
+            width: 100%;
+            margin: 24px auto;
+            grid-gap: 16px;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}

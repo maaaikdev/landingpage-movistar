@@ -45,12 +45,14 @@ const PlanCards = (props) => {
 		</div>		
 		<p className='install'>{plan.install}</p>
 		<p className='prev'>{plan.note}</p>
-		<button className='btn-main'>{plan.mainButton}</button>
-		<button className='btn-second'>{plan.secondButton}</button>
+		<div className='btn-main-content'>
+			<button className='btn-main'>{plan.mainButton}</button>
+			<button className='btn-second'>{plan.secondButton}</button>
+		</div>		
 		
 		<a onClick={toggleDiv} className='link-drop'>
 			{divVisible ? 'Ver menos' : 'Ver más beneficios'}
-			<img src='/assets/images/plans/icons-apps/arrow.png' alt='arrow' className={`${divVisible ? 'rotate' : 'normal'}`}/>
+			<img src='assets/images/plans/icons-apps/arrow.png' alt='arrow' className={`${divVisible ? 'rotate' : 'normal'}`}/>
 		</a>
 		{divVisible  && 		
 			<div className={`divDrop`}>
@@ -60,7 +62,7 @@ const PlanCards = (props) => {
 						<img key={index} src={item} alt='social-media' />
 					))}
 				</div>
-				<div className={`bono ${plan.promoTitle === undefined ? 'visible' : ''}`}>
+				<div className={`bono ${plan.promoTitle === undefined ? 'hidden' : ''}`}>
 					<h4>{plan.promoTitle}</h4>
 					<p>{plan.bonoTxt} <span>{plan.bonoMonth}</span></p>
 				</div>
