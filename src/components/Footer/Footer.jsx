@@ -74,9 +74,6 @@ const Footer = () => {
 		"Información abonados y usuarios",
 		"Libro de Reclamaciones"
 	]
-	
-	
-
 	return (
 		<div className='footer'>
 			<img src='assets/images/footer/logo-telefonica.png' alt='logo' className='logo-telefonica'/>

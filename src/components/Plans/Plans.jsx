@@ -6,7 +6,6 @@ import plansData from '../../data/plans.json'
 const Plans = () => {
     const [data, setData] = useState(null);
     useEffect(() => {
-		// setData(plansData)
         // Realiza una solicitud para obtener el JSON
 		fetch('data/plans.json') // Ruta relativa al archivo JSON
 		//fetch('https://maaaik.site/landing-movistar-telefonica/data/plans.json')
