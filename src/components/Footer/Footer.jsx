@@ -82,11 +82,11 @@ const Footer = () => {
 			<img src='assets/images/footer/logo-telefonica.png' alt='logo' className='logo-telefonica'/>
 			<div className='content-footer'>
 				{windowWidth > 768 && info.map((item, index) => (
-					<div className='column'>
+					<div className='column' key={index}>
 						<h4>{item.title}</h4>
 						<ul>
 							{item.items.map((items, index) =>(
-								<li>{items}</li>
+								<li key={index}>{items}</li>
 							))}
 						</ul>
 					</div>
@@ -103,7 +103,7 @@ const Footer = () => {
 							<div className="collapsed-content">
 								<ul>
 									{item.items.map((items, index) =>(
-										<li>{items}</li>
+										<li key={index} >{items}</li>
 									))}
 								</ul>
 							</div>
@@ -115,7 +115,7 @@ const Footer = () => {
 				<ul>
 					<li className='cp'>© 2023 Movistar. Todos los derechos reservados.</li>
 					{footerFinal.map((item, index) => (
-						<li className='other-btn'>{item}</li>
+						<li key={index} className='other-btn'>{item}</li>
 					))}
 					<li>
 						<img src='assets/images/footer/redes.png' alt='arrow'/>

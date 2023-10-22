@@ -1,6 +1,6 @@
 import './App.css';
 import Breadcrumbs from './components/Breadcrumbs/Breadcrumbs';
-import Carousel from './components/Caroursel/Carousel';
+// import Carousel from './components/Caroursel/Carousel';
 import ClientsOpinion from './components/ClientsOpinion/ClientsOpinion';
 import Footer from './components/Footer/Footer';
 import Hero from './components/Hero/Hero';
@@ -18,7 +18,7 @@ function App() {
 			<Plans />
 			<OpticalFiber />
 			<ClientsOpinion />
-			<Carousel />
+			{/* <Carousel /> */}
 			<Questions />
 			<Footer />
 		</div>

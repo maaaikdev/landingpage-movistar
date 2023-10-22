@@ -16,9 +16,6 @@ const Hero = () => {
 		};
 	}, [windowWidth]);
 
-	console.log(windowWidth)	
-
-
 	return (
 		<div className='content-hero'>
 			<div className='hero'>
@@ -26,7 +23,7 @@ const Hero = () => {
 				<div className='content'>
 					<h2>¡Conoce la fibra óptica de Movistar!</h2>
 					<h4>Si ya eres cliente Movistar, <span>migra SIN COSTO</span> manteniendo tu plan actual.</h4>
-					<img src='assets/images/hero/promo.svg' alt='Hero' className='promo' />
+					<img src='assets/images/hero/promo.svg' alt='Promo' className='promo' />
 				</div> 
 			</div>
 			<div className='coverage-content'>

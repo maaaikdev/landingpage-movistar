@@ -5,11 +5,11 @@ import plansData from '../../data/plans.json'
 
 const Plans = () => {
     const [data, setData] = useState(null);
-	console.log("planes", plansData)
     useEffect(() => {
 		// setData(plansData)
         // Realiza una solicitud para obtener el JSON
 		fetch('data/plans.json') // Ruta relativa al archivo JSON
+		//fetch('https://maaaik.site/landing-movistar-telefonica/data/plans.json')
 			.then((response) => {
 				if (!response.ok) {
 				throw new Error('No se pudo cargar el JSON');
